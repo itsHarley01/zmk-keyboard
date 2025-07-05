@@ -1,16 +1,16 @@
 / {
     // Set up the keyboard scanning matrix
     &kscan0 {
-        row-gpios = <&gpio0 02>, <&gpio0 03>, <&gpio0 04>, <&gpio0 05>;  
-        col-gpios = <&gpio1 06>, <&gpio1 07>, <&gpio1 021>, <&gpio1 20>, <&gpio1 19>, <&gpio1 18>;  
+        row-gpios = <&gpio0 17>, <&gpio0 20>, <&gpio0 22>, <&gpio0 24>;   
+        col-gpios = <&gpio1 10>, <&gpio0 11>, <&gpio0 31>, <&gpio0 29>, <&gpio0 2>, <&gpio1 15>;  
         diode-direction = <COL2ROW>;
     }
 
     // Rotary encoder
     encoder0: encoder0 {
         compatible = "zmk,behavior-rotary-encoder";
-        a-pin = <&gpio1 15>;
-        b-pin = <&gpio1 14>;
+        a-pin = <&gpio1 13>;
+        b-pin = <&gpio1 11>;
         steps = <4>;
         label = "Volume Encoder";
     };
