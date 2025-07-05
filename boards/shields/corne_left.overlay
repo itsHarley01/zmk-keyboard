@@ -3,7 +3,7 @@
     &kscan0 {
         row-gpios = <&gpio0 02>, <&gpio0 03>, <&gpio0 04>, <&gpio0 05>;  
         col-gpios = <&gpio1 06>, <&gpio1 07>, <&gpio1 021>, <&gpio1 20>, <&gpio1 19>, <&gpio1 18>;  
-        diode-direction = <ROW2COL>;
+        diode-direction = <COL2ROW>;
     }
 
     // Rotary encoder
